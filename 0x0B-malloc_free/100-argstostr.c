@@ -37,4 +37,13 @@ char *argstostr(int ac, char **av)
 
 		while (s[k])
 		{
+			str[j] = s[k];
+			k++;
+			j++;
+		}
+		str[j++] = '\n';
+	}
+	str[j] = '\0';
 
+	return (str);
+}
